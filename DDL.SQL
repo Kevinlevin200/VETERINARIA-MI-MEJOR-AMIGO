@@ -1,0 +1,12 @@
+CREATE DATABASE Veterinaria;
+
+USE Veterinaria;
+
+CREATE TABLE Duenio(
+	id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    nombre VARCHAR(45) NOT NULL,
+    cedula VARCHAR(16) NOT NULL UNIQUE,
+    telefono VARCHAR(13) NOT NULL UNIQUE,
+    email VARCHAR(255) NOT NULL
+    );
+
