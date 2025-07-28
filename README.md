@@ -65,11 +65,8 @@ Las relaciones están definidas por llaves foráneas y respetan las cardinalidad
 - `JOIN`, `GROUP BY`, `ORDER BY` y más
 
 ---
-# Proceso y evidencias
--
----
 # Enlace de video
--
+- https://drive.google.com/drive/folders/12-m09GOzhDTYrLUlKGE9GtDIb6MSEDyM?usp=sharing
 ---
 
 ## Autores
