@@ -6,16 +6,17 @@ CREATE TABLE Duenio(
 	id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
     nombre VARCHAR(45) NOT NULL,
     cedula VARCHAR(16) NOT NULL UNIQUE,
-    telefono VARCHAR(13) NOT NULL UNIQUE,
-    email VARCHAR(255) NOT NULL
+    telefono VARCHAR(13) NOT NULL,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    direccion VARCHAR(255) NOT NULL
     );
 
 CREATE TABLE mascota(
 	id  INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(45) NOT NULL,
-    edad DATE NOT NULL,
+    edad INT NOT NULL,
 	raza VARCHAR(45) NOT NULL,
-    vacunado BOOLEAN NOT NULL,
+    vacunado VARCHAR(2) NOT NULL,
     sexo VARCHAR(16) NOT NULL
     );
     
