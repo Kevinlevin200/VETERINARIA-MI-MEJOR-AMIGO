@@ -89,3 +89,15 @@ ALTER TABLE registro
   ADD CONSTRAINT fk_id_mascota
     FOREIGN KEY (id_mascota) REFERENCES mascota(id)
     ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+INSERT INTO `veterinaria`.`visita` (`id`, `id_servicio`) VALUES ('6', '1');
+INSERT INTO `veterinaria`.`visita` (`id`, `id_servicio`) VALUES ('7', '1');
+INSERT INTO `veterinaria`.`visita` (`id`, `id_servicio`, `id_tratamiento`) VALUES ('8', '5', '4');
+INSERT INTO `veterinaria`.`visita` (`id`, `id_servicio`, `id_tratamiento`) VALUES ('9', '5', '4');
+INSERT INTO `veterinaria`.`visita` (`id`, `id_servicio`) VALUES ('10', '2');
+
+INSERT INTO `veterinaria`.`mascota` (`id`, `nombre`, `edad`, `raza`, `vacunado`, `sexo`, `id_duenio`, `id_especie`) VALUES ('6', 'Milu', '2', 'Buldog', 'SI', 'HEMBRA', '4', '1');
+INSERT INTO `veterinaria`.`mascota` (`id`, `nombre`, `edad`, `raza`, `vacunado`, `sexo`, `id_duenio`, `id_especie`) VALUES ('7', 'Rocky', '3', 'Dalmata', 'SI', 'MACHO', '4', '1');
+INSERT INTO `veterinaria`.`mascota` (`id`, `nombre`, `edad`, `raza`, `vacunado`, `sexo`, `id_duenio`, `id_especie`) VALUES ('8', 'Dante', '6', 'Chiguagua', 'NO', 'MACHO', '3', '1');
+INSERT INTO `veterinaria`.`mascota` (`id`, `nombre`, `edad`, `raza`, `vacunado`, `sexo`, `id_duenio`, `id_especie`) VALUES ('9', 'Elise', '4', 'Persa', 'NO', 'HEMBRA', '2', '2');
+INSERT INTO `veterinaria`.`mascota` (`id`, `nombre`, `edad`, `raza`, `vacunado`, `sexo`, `id_duenio`, `id_especie`) VALUES ('10', 'Kitty', '3', 'Birmano', 'SI', 'HEMBRA', '1', '2');
